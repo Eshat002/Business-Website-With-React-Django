@@ -1,0 +1,50 @@
+.banner .container-fluid {
+    width: 100%
+}
+
+.banner .container-fluid .left-col {
+    background-color: #6888FF;
+    padding: 50px 70px 20px 0px
+}
+
+.banner .container-fluid .right-col {
+    background-color: #E9EFFF;
+    padding: 50px 0px 20px 70px
+}
+
+.banner-headline {
+    font-family: "Quicksand", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 20px 0px 10px 0px
+}
+
+.banner-text {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff
+}
+
+
+.banner .right-col .banner-headline {
+    color: #5E80FF !important
+}
+
+.banner .right-col .banner-text {
+    color: #5E80FF
+}
+
+
+@media screen and (max-width:500px) {
+    .banner .container-fluid .left-col {
+
+        padding: 50px 50px 20px 20px
+    }
+
+    .banner .container-fluid .right-col {
+
+        padding: 50px 20px 20px 50px
+    }
+}

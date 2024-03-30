@@ -1,0 +1,80 @@
+.process .container-fluid {
+    width: 85%;
+    padding: 70px 0px;
+
+}
+
+
+
+.process .process-headline {
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    margin-top: 20px;
+
+}
+
+.single-process-step-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #4074F8;
+    margin: 25px 0px
+}
+
+.single-process-step-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #ADB3CB;
+}
+
+.process-steps {
+    margin: 50px 0px 25px 0px;
+    display: flex;
+    gap: 50px
+}
+
+.process-btn-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.process-btn-container .about-us-btn {
+    color: #D43F3F;
+    background-color: #FFD7D7;
+    padding: 9px 23px;
+}
+
+.process-btn-container .enquiry-btn {
+    color: #3A79FF;
+    background-color: #D2E1FF;
+    padding: 9px 23px;
+}
+
+.process-btn-container .or-div {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ADB3CB;
+    margin-top: 5px;
+    padding: 0px 20px
+}
+
+@media screen and (max-width:500px) {
+    .process-steps {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .process-btn-container {
+        flex-direction: column;
+    }
+
+    .or-div-line-container {
+        display: column;
+        justify-content: center;
+        padding: 30px 0px
+    }
+}

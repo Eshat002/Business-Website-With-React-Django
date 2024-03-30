@@ -1,0 +1,58 @@
+.info {
+    background-color: #F5F8FF;
+}
+
+.info .container-fluid {
+    width: 85%;
+    padding-top: 200px
+}
+
+.info .our-service-btn {
+    background-color: #4C85FF;
+    color: #ffffff;
+
+}
+
+.info .connect-btn {
+    background-color: transparent;
+    color: #ADB4D2;
+    border: 1px solid #D1D1E4;
+    font-weight: 500;
+    padding: 8.2px 20px;
+}
+
+.info img {
+    width: 100%;
+    margin-top: -70px;
+}
+
+.info-headline {
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 20px
+}
+
+
+@media screen and (max-width:1366px) and (min-width:1280px) {
+    .info img {
+
+        margin-top: -40px !important;
+    }
+}
+
+
+@media screen and (max-width:991.20px) {
+
+    .info img {
+        margin-top: 80px !important;
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+    .info .container-fluid {
+        width: 95%;
+        padding-top: 100px
+    }
+}

@@ -1,0 +1,22 @@
+.sponsor .container-fluid {
+    width: 85%;
+}
+
+.sponsor {
+    border: 1px solid #D8E3FE;
+    padding: 15px;
+    margin-top: 20px;
+
+}
+
+.sponsor img {
+
+    width: 80%;
+}
+
+
+@media screen and (max-width:500px) {
+    .sponsor img {
+        width: 100%;
+    }
+}
