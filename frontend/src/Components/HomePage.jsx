@@ -6,6 +6,9 @@ import Info from './Info/Info'
 import Banner from './Banner/Banner'
 import Process from './Process/Process'
 import Works from './Works/Works'
+import Review from './Review/Review'
+import Interest from './Interest/Interest'
+import Footer from './Footer/Footer'
 
 
 const HomePage = () => {
@@ -18,6 +21,9 @@ const HomePage = () => {
             <Banner />
             <Process />
             <Works />
+            <Review />
+            <Interest />
+
         </div>
 
     )

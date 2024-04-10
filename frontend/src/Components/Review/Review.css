@@ -1,0 +1,54 @@
+.review {
+    background-color: #EAF0FF;
+
+}
+
+.review .custom-container-fluid {
+    width: 100%;
+    padding-left: 100px;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+}
+
+.review .custom-container-fluid .first-col {
+    padding-left: 160px
+}
+
+.review .review-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #A4ABC8;
+}
+
+.review .review-headline {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 15px 0px
+}
+
+
+
+@media screen and (max-width:991.20px) {
+    .review .custom-container-fluid {
+        width: 90%;
+    }
+
+    .review .custom-container-fluid .first-col {
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+    .review .custom-container-fluid {
+        width: 90%;
+        padding-left: 50px;
+    }
+
+
+}

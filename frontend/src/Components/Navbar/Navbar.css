@@ -31,6 +31,8 @@
  .custom-navbar-mobile .custom-nav-links-mobile li a {
      text-decoration: none;
      padding-bottom: 10px;
+     font-weight: 500;
+     font-family: "Montserrat", sans-serif;
  }
 
  .custom-navbar .custom-nav-links li a:hover {

@@ -11,7 +11,7 @@ import worksSwiperImage1 from '../../Img/worksSwiperImage1.png'
 const Works = () => {
 
     return (
-        <div className='works mb-5'>
+        <div className='works'>
             <div className="container-fluid">
                 <div className="row">
                     {/* <div className="col-lg"></div> */}

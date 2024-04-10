@@ -1,0 +1,32 @@
+.interest {
+    background-color: #5E80FF;
+}
+
+.interest .container-fluid {
+    width: 85%;
+    padding: 80px 0px 60px 0px
+}
+
+.interest .interest-sub-headline {
+    color: #ffffff
+}
+
+.interest .interest-headline {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.interest .interest-text {
+    color: #ffffff
+}
+
+.interest-see-more-btn {
+    background-color: #ffffff;
+}
+
+.interest-connect-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #A0B4FF;
+    padding: 8.2px 20px;
+}
