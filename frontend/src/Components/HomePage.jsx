@@ -8,7 +8,7 @@ import Process from './Process/Process'
 import Works from './Works/Works'
 import Review from './Review/Review'
 import Interest from './Interest/Interest'
-import Footer from './Footer/Footer'
+
 
 
 const HomePage = () => {

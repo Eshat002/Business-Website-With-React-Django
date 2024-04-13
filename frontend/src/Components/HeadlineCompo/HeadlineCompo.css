@@ -1,0 +1,32 @@
+.headline-compo-sub-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #3D4F9F;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.headline-compo-title {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #3D4F9F;
+}
+
+.headline-compo {
+    background-color: #F5F8FF;
+    padding: 20px 0px 10px 0px;
+    border-top: 1px solid #D8E3FE
+}
+
+
+@media screen and (max-width:991.20px) {
+    .headline-compo-sub-title {
+        font-size: 12px;
+    }
+
+    .headline-compo-title {
+        font-size: 35px;
+    }
+}

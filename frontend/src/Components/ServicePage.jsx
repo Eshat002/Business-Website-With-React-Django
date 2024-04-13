@@ -1,9 +1,11 @@
 import React from 'react'
+import HeadlineCompo from './HeadlineCompo/HeadlineCompo'
 
 const ServicePage = () => {
     return (
         <div>
-            ServicePage
+            <HeadlineCompo subTitle="we buy & sell" title="All Services" />
+
         </div>
     )
 }
