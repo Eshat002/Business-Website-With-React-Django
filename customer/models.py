@@ -34,3 +34,18 @@ class CustomerReview(models.Model):
 
     def __str__(self):
         return str(self.body[:40])
+    
+
+
+class CustomerService(models.Model):
+    name=models.CharField(max_length=100, null=False, blank=False)
+    type=models.CharField(max_length=100, null=False, blank= False)
+    description= models.TextField(null=False, blank=False)
+    img = models.ImageField(default='service/service.jpg', upload_to='services',validators=[
+                              FileExtensionValidator(['png', 'jpg', 'jpeg', 'gif'])])
+    
+    # class Meta:
+    #     ordering = ['-id']
+
+    def __str__(self):
+        return str(self.description[:40])
