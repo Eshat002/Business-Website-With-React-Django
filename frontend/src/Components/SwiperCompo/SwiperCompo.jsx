@@ -10,6 +10,7 @@ import { Pagination } from 'swiper/modules';
 const SwiperCompo = () => {
 
     const [reviews, setReviews] = useState([]);
+
     useEffect(() => {
         const fetchData = async () => {
             try {

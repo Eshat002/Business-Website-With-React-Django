@@ -1,0 +1,56 @@
+.service-compo {
+    box-shadow: 0px 15px 50px 1px #dee6f8;
+    border-radius: 10px !important;
+    margin-bottom: 70px;
+}
+
+.service-compo .image-container img {
+    width: 100%;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px;
+}
+
+.service-compo .service-name {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #407BFF;
+    margin-bottom: 5px
+}
+
+.service-compo .service-type {
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #181818
+}
+
+.service-compo .service-description {
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.service-compo .details-container {
+    border-bottom: 2px solid #C4C4C4;
+    min-height: 180px;
+
+}
+
+.service-compo .call-us-btn {
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3A79FF;
+    background-color: #D2E1FF;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    margin-top: 15px
+}
+
+.service-compo .text-btn-container {
+    padding: 20px
+}

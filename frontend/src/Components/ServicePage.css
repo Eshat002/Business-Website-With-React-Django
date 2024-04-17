@@ -1,0 +1,17 @@
+.service-page .service-compo-container {
+    width: 85%;
+    padding: 70px 0px 150px 0px
+}
+
+.service-page .container-fluid .col-lg-4 {
+    padding: 0px 30px;
+
+}
+
+
+@media screen and (max-width:500px) {
+    .service-page .service-compo-container {
+
+        padding: 20px 0px 150px 0px
+    }
+}
