@@ -1,0 +1,20 @@
+.about-page .about-us-text-container {
+    width: 85%;
+    padding: 70px 0px
+}
+
+.about-page .about-us-text-container .about-us-text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333639
+}
+
+@media screen and (max-width:500px) {
+    .about-page .about-us-text-container .about-us-text {
+
+        font-size: 16px;
+
+    }
+
+}
