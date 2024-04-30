@@ -1,6 +1,9 @@
 import React from 'react'
 import HeadlineCompo from './HeadlineCompo/HeadlineCompo'
 import "./AboutPage.css"
+import CloudImage from './../Img/cloud.png'
+import CloudImage2 from './../Img/cloud2.png'
+
 
 const AboutPage = () => {
     return (
@@ -16,6 +19,26 @@ const AboutPage = () => {
                     <div className="col-lg"></div>
 
                 </div>
+            </div>
+
+
+            <div className="about-us-btn-container container-fluid">
+                <div className="row">
+                    <div className="col-lg-3 col-md-3 col">
+                        <img className='cloud-image-left img-fluid' src={CloudImage} alt="cloud-image" />
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-7 text-center">
+                        <h5 className="sub-headline">Like our work</h5>
+                        <h3 className='headline'>Contact Us</h3>
+                        <div className="button-container">
+                            <button className="custom-primary-btn enquiry-btn">Enquiry</button>
+                            <button className="custom-primary-btn service-btn">Our Services</button>
+                        </div></div>
+                    <div className="col-lg-3 last-col col-md-3 col">
+                        <img className='cloud-image-right img-fluid' src={CloudImage2} alt="cloud-image" />
+                    </div>
+                </div>
+
             </div>
         </div>
     )

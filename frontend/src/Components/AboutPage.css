@@ -3,6 +3,18 @@
     padding: 70px 0px
 }
 
+.about-page .about-us-btn-container {
+    background-color: #5E80FF;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+}
+
+.about-page .about-us-btn-container .last-col {
+    padding-top: 150px;
+
+}
+
 .about-page .about-us-text-container .about-us-text {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
@@ -10,11 +22,64 @@
     color: #333639
 }
 
-@media screen and (max-width:500px) {
-    .about-page .about-us-text-container .about-us-text {
+.about-page .about-us-btn-container .sub-headline {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #FFFFFF;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-top: 90px;
+}
 
-        font-size: 16px;
 
+.about-page .about-us-btn-container .headline {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin: 10px 0px 40px 0px
+}
+
+.about-us-btn-container .enquiry-btn {
+    background-color: #FFFFFF;
+    padding: 9px 30px;
+    margin-bottom: 20px
+}
+
+.about-us-btn-container .service-btn {
+    background-color: transparent;
+    color: #d1d6ea;
+    border: 1px solid #A0B4FF;
+    padding: 8.2px 30px;
+}
+
+
+
+
+@media screen and (max-width:991px) {
+    .about-page .about-us-btn-container .sub-headline {
+        margin-top: 35px !important;
     }
 
+}
+
+@media screen and (max-width:500px) {
+    .about-page .about-us-text-container .about-us-text {
+        font-size: 16px;
+    }
+
+    .about-page .about-us-btn-container .headline {
+        font-size: 35px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    .about-page .about-us-btn-container {
+        padding-bottom: 70px;
+    }
+
+    .about-us-btn-container .service-btn {
+        padding: 8.2px 20px;
+    }
 }
