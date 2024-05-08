@@ -1,0 +1,18 @@
+.contact-page .contact-section .container-fluid {
+    width: 85%;
+}
+
+.contact-page .contact-section .headline-container .headline {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #5889D6;
+    text-transform: capitalize;
+    border-bottom: 2px solid #5889D6;
+    display: inline;
+    padding-bottom: 5px;
+}
+
+.contact-page .contact-section {
+    margin-top: 160px;
+}
