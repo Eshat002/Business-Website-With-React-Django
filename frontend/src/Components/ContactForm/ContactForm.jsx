@@ -8,6 +8,9 @@ const ContactForm = () => {
         message: ''
     });
 
+    const [formErrors, setFormErrors] = useState({});
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -18,13 +21,18 @@ const ContactForm = () => {
                 },
                 body: JSON.stringify(formData),
             });
+            const responseData = await response.json()
+
             if (response.ok) {
-                // Handle successful form submission (e.g., show success message)
+
             } else {
-                // Handle form submission error (e.g., show error message)
+                setFormErrors(responseData)
+
             }
+
         } catch (error) {
             console.error('Error submitting form:', error);
+
         }
     };
 
@@ -44,7 +52,11 @@ const ContactForm = () => {
                         value={formData.full_name}
                         onChange={handleChange}
                         className='form-control'
+                        style={{ border: formErrors.full_name ? "2px solid red" : "" }}
                     />
+                    {formErrors.full_name && (
+                        <p className="error">{formErrors.full_name}</p>
+                    )}
                 </div>
                 <div className="email-container">
                     <input
@@ -54,8 +66,12 @@ const ContactForm = () => {
                         value={formData.email}
                         onChange={handleChange}
                         className='form-control'
+                        style={{ border: formErrors.email ? "2px solid red" : "" }}
 
                     />
+                    {formErrors.email && (
+                        <p className="error">{formErrors.email}</p>
+                    )}
                 </div>
                 <div className="text-area-container">
                     <textarea
@@ -65,7 +81,11 @@ const ContactForm = () => {
                         onChange={handleChange}
                         rows={4}
                         className='form-control'
+                        style={{ border: formErrors.message ? "2px solid red" : "" }}
                     />
+                    {formErrors.message && (
+                        <p className="error">{formErrors.message}</p>
+                    )}
                 </div>
                 <div className="submit-btn-container">
                     <button className='btn btn-primary pt-2 pb-2' type="submit">Send</button>
