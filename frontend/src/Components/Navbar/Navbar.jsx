@@ -54,7 +54,7 @@ function Navbar() {
 
     return (
         <>
-            <div className="custom-navbar">
+            <div className="custom-navbar sticky-top">
                 <div className="container-fluid">
                     <div className="left-section">
                         <div className="logo-container">

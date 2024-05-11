@@ -1,5 +1,6 @@
 .contact-page .contact-section .container-fluid {
     width: 85%;
+    min-height: 600px;
 }
 
 .contact-page .contact-section .headline-container .headline {
@@ -17,4 +18,28 @@
 .contact-page .contact-section {
     margin-top: 100px;
     margin-bottom: 200px;
+}
+
+
+@media screen and (max-width:1440px) and (min-width:1280px) {
+    .contact-page .contact-section .map-container iframe {
+        height: 185px !important;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .contact-page .contact-section .map-container iframe {
+        height: 400px !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .contact-page .contact-section .map-container iframe {
+        height: 250px !important;
+    }
+
+    .contact-page .contact-section .container-fluid {
+        width: 95%;
+    }
+
 }

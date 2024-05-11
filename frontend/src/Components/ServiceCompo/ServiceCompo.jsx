@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './ServiceCompo.css'
-
+import { Link } from 'react-router-dom'
 
 const ServiceCompo = ({ name, img, type, description }) => {
     // Empty dependency array means this effect runs once after the component mounts
@@ -17,7 +17,11 @@ const ServiceCompo = ({ name, img, type, description }) => {
                     <p className='service-description'>{description}</p>
                 </div>
                 <div className="btn-container">
-                    <button className="call-us-btn">Call Us</button>
+                    <Link to="/contact">
+                        <button className="call-us-btn">
+                            Call Us
+                        </button>
+                    </Link>
                 </div>
             </div>
 

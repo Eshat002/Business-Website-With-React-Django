@@ -21,10 +21,10 @@ const ContactPage = () => {
                                 <h2 className='headline'>Get In Touch</h2>
                             </div>
                             <div className="row gx-5">
-                                <div className="col-lg-6 contact-form-container">
+                                <div className="col-lg-6 contact-form-container mb-5">
                                     <ContactForm />
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-6 mb-5">
                                     <div className="address-container d-flex mb-2">
                                         <div className="icon-container me-3">
                                             <Location />
