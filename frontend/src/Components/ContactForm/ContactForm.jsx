@@ -9,6 +9,7 @@ const ContactForm = () => {
     });
 
     const [formErrors, setFormErrors] = useState({});
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
 
     const handleSubmit = async (e) => {
@@ -24,9 +25,17 @@ const ContactForm = () => {
             const responseData = await response.json()
 
             if (response.ok) {
+                setIsSubmitted(true)
+                setFormErrors({})
+                setFormData({
+                    full_name: '',
+                    email: '',
+                    message: ''
+                })
 
             } else {
                 setFormErrors(responseData)
+                setIsSubmitted(false)
 
             }
 
@@ -42,7 +51,9 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form-div">
+
             <h2 className='form-title'>Let’s talk</h2>
+            {isSubmitted && <div className='success-message'><p style={{ fontWeight: 500, fontSize: "14px" }}>Form submitted successfully</p></div>}
             <form onSubmit={handleSubmit}>
                 <div className="name-container">
                     <input
@@ -87,6 +98,7 @@ const ContactForm = () => {
                         <p className="error">{formErrors.message}</p>
                     )}
                 </div>
+
                 <div className="submit-btn-container">
                     <button className='btn btn-primary pt-2 pb-2' type="submit">Send</button>
                 </div>
