@@ -14,7 +14,7 @@ const SwiperCompo = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8000/customer/api/review-list/'); // Replace 'https://api.example.com/data' with your API endpoint
+                const response = await axios.get('https://business-website-with-react-django.vercel.app/customer/api/review-list/'); // Replace 'https://api.example.com/data' with your API endpoint
                 setReviews(response.data);
                 console.log("review", reviews)
 
