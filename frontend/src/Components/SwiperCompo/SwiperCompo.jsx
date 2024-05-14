@@ -64,7 +64,7 @@ const SwiperCompo = () => {
 
                             </div>
                             <div className='d-flex justify-content-center'>
-                                <img src={`https://business-website-with-react-django.vercel.app/${review.customer_avatar_url}`} alt="customer-image" />
+                                <img src={`https://business-website-with-react-django.vercel.app${review.customer_avatar_url}`} alt="customer-image" />
 
                             </div>
                         </div>
