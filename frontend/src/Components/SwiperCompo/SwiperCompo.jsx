@@ -14,7 +14,7 @@ const SwiperCompo = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://business-website-with-react-django.vercel.app/customer/api/review-list/'); // Replace 'https://api.example.com/data' with your API endpoint
+                const response = await axios.get('https://business-website-with-react-django.onrender.com/customer/api/review-list/'); // Replace 'https://api.example.com/data' with your API endpoint
                 setReviews(response.data);
                 console.log("review", reviews)
 
@@ -64,7 +64,7 @@ const SwiperCompo = () => {
 
                             </div>
                             <div className='d-flex justify-content-center'>
-                                <img src={`https://business-website-with-react-django.vercel.app${review.customer_avatar_url}`} alt="customer-image" />
+                                <img src={`https://business-website-with-react-django.onrender.com${review.customer_avatar_url}`} alt="customer-image" />
 
                             </div>
                         </div>

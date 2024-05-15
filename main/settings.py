@@ -43,7 +43,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -84,9 +83,6 @@ DATABASES = {
 }
 
 
-DATABASES = {
-   'default': dj_database_url.parse(config("DATABASE_URL"))
-}
 
 
 # Password validation
@@ -137,4 +133,4 @@ MEDIA_ROOT = BASE_DIR / 'media_root'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+ 

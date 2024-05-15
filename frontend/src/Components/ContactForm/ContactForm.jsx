@@ -15,7 +15,7 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://business-website-with-react-django.vercel.app/contact/api/create-contact/', {
+            const response = await fetch('https://business-website-with-react-django.onrender.com/contact/api/create-contact/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

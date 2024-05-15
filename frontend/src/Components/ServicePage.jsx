@@ -11,7 +11,7 @@ const ServicePage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://business-website-with-react-django.vercel.app/customer/api/customer-services/');
+                const response = await axios.get('https://business-website-with-react-django.onrender.com/customer/api/customer-services/');
                 setServices(response.data);
 
 
